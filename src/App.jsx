@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-     <div className='bg-black'>
+     <div>
       <img className='mx-auto md:h-[500px] w-full md:w-[650px]' src={banner} alt="" />
 
      </div>
