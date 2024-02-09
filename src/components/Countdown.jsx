@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 function Countdown({ targetDate }) {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
@@ -8,7 +8,7 @@ function Countdown({ targetDate }) {
     const difference = new Date(targetDate) - now;
 
     if (difference <= 0) {
-      return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+      return { days: 20, hours: 1, minutes: 10, seconds: 60 };
     }
 
     const days = Math.floor(difference / (1000 * 60 * 60 * 24));
@@ -36,8 +36,8 @@ function Countdown({ targetDate }) {
         timeLeft.hours === 0 &&
         timeLeft.minutes === 0 &&
         timeLeft.seconds === 0
-          ? 'Countdown Expired'
-          : 'We are coming in'}
+          ? "Countdown Expired"
+          : "We are coming in"}
       </h1>
       {timeLeft.days === 0 &&
       timeLeft.hours === 0 &&
